@@ -5,11 +5,11 @@
 describe( 'Contact App', function() {
 
   describe( 'Contact List View', function () {
-    browser.get( 'app/index.html' );
+    browser.get( 'dev.html' );
   } );
 
-  it ( 'should redirect index.html to index.html#/phones', function () {
-    browser.get( 'app/index.html' );
+  it ( 'should redirect dev.html to dev.html#/phones', function () {
+    browser.get( 'dev.html' );
     browser.getLocationAbsUrl().then( function ( url ) {
       expect( url.split( '#' )[ 1 ] ).toBe( '/contacts' );
     } );

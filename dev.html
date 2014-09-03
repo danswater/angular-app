@@ -1,0 +1,57 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Manager</title>
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/application.css">
+    </head>
+    <body ng-controller="ContactController">
+      <div id="wrap">
+	<div class="container">
+
+	    <div id="header-region">
+	      <div class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="navbar-inner">
+		    <div class="container">
+			<a class="brand" href="#contacts">Contact manager</a>
+		      <div class="nav-collapse collapse">
+			  <ul class="nav">
+			    <li class="active">
+			    <a href="#contacts">Contacts</a>
+			</li>
+			<li>
+			    <a href="#about">About</a>
+			</li>
+		      </ul>
+			</div>
+		    </div>
+		  </div>
+	      </div>
+	  </div>
+
+	  <div id="main-region" class="container" ng-view>
+	  </div>
+
+	  <div id="dialog-region"></div>
+
+	</div> <!-- container -->
+      </div>
+
+      <script src="libs/jquery/dist/jquery.js"></script>
+      <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="libs/lodash/dist/lodash.js"></script>
+      <script src="libs/angular/angular.js"></script>
+      <script src="libs/angular-route/angular-route.js"></script>
+      <script src="libs/angular-mocks/angular-mocks.js"></script>
+      <script src="libs/angular-bootstrap/ui-bootstrap.js"></script>
+      <script src="libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+      <script src="app/application.js"></script>
+      <script src="app/contacts/contact.js"></script>
+
+      <script src="app/directives/modal/modal.js"></script>
+    </body>
+</html>
