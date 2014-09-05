@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h3 class="modal-title">Edit Contact</h3>
+</div>
+<div class="modal-body">
+<div id="dialog-region" class="ui-dialog-content ui-widget-content">
+    <div>
+      <form>
+	<div class="control-group">
+	  <label for="contact-firstName" class="control-label">First name:</label>
+	  <input id="contact-firstName" name="firstName" type="text" value="{{contact.firstName}}" ng-model="contact.firstName">
+	</div>
+	<div class="control-group">
+	  <label for="contact-lastName" class="control-label">Last name:</label>
+	  <input id="contact-lastName" name="lastName" type="text" value="{{contact.lastName}}" ng-model="contact.lastName">
+	</div>
+      </form>
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="save( contact )">Save</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
