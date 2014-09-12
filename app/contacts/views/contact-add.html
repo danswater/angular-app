@@ -1,23 +1,29 @@
+<form role="form">
 <div class="modal-header">
     <h3 class="modal-title">New Contact</h3>
 </div>
 <div class="modal-body">
 <div id="dialog-region" class="ui-dialog-content ui-widget-content">
-    <div>
-      <form>
-	<div class="control-group">
-	  <label for="contact-firstName" class="control-label">First name:</label>
-	  <input id="contact-firstName" name="firstName" type="text" value="" ng-model="contact.firstName">
-	</div>
-	<div class="control-group">
-	  <label for="contact-lastName" class="control-label">Last name:</label>
-	  <input id="contact-lastName" name="lastName" type="text" value="" ng-model="contact.lastName">
-	</div>
-      </form>
-    </div>
+	  <div class="form-group">
+	    <label for="contact-firstname">First name:</label>
+	    <input type="text" class="form-control" id="contact-firstname" placeholder="First Name" required ng-model="contact.firstName">
+	  </div>
+	  <div class="form-group">
+	    <label for="contact-lastname">Last Name</label>
+	    <input type="text" class="form-control" id="contact-lastname" placeholder="Last Name" required ng-model="contact.lastName">
+	  </div>
+	  <div class="form-group">
+	    <label for="contact-age">Age</label>
+	    <input type="text" class="form-control" id="contact-age" placeholder="Age" ng-model="contact.age">
+	  </div>
+	  <div class="form-group">
+	    <label for="contact-location">Location</label>
+	    <input type="text" class="form-control" id="contact-location" placeholder="Location" ng-model="contact.location">
+	  </div>
 </div>
 </div>
 <div class="modal-footer">
     <button class="btn btn-primary" ng-click="save( contact )">Save</button>
     <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
 </div>
+</form>

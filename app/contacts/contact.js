@@ -1,16 +1,17 @@
 'use strict';
 
-angular.module( 'app.contact', [
+var contact = angular.module( 'app.contact', [
 	'ngRoute',
 	'ui.bootstrap',
 	'app.contact.controllers',
 	'app.contact.models'
-] )
-.config( [ '$routeProvider' , function ( $routeProvider ) {
+] );
+
+var route = function ( $routeProvider ) {
 	$routeProvider
 		.when( '/contacts', {
 			'templateUrl' : 'app/contacts/views/contacts-list.html',
-			'controller'  : 'ContactController'
+			'controller'  : 'ContactListController'
 		} )
 		.when( '/contacts/:id', {
 			'templateUrl' : 'app/contacts/views/contacts-view.html',
@@ -19,4 +20,6 @@ angular.module( 'app.contact', [
 		.otherwise( {
 			'redirectTo' : '/contacts'
 		} );
-} ] );
+};
+
+contact.config( [ '$routeProvider' ,  route ] );

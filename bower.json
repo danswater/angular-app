@@ -13,6 +13,9 @@
     "html5-boilerplate": "~4.3.0",
     "angular-bootstrap": "~0.11.0",
     "bootstrap": "~3.2.0",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "firebase": "~1.0.21",
+    "angularfire": "~0.8.2",
+    "ngActiveResource": "~0.7.7"
   }
 }

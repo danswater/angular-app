@@ -1,10 +1,66 @@
 [
-	{ "id" : 0, "firstName" : "Alice", "lastName" : "Arten" },
-	{ "id" : 1, "firstName" : "Bob", "lastName" : "Brigham" },
-	{ "id" : 2, "firstName" : "Charilie", "lastName" : "Campbell" },
-	{ "id" : 3, "firstName" : "Bob", "lastName" : "Marley" },
-	{ "id" : 4, "firstName" : "Tom", "lastName" : "DeLonge" },
-	{ "id" : 5, "firstName" : "Justin", "lastName" : "Timberlake" },
-	{ "id" : 6, "firstName" : "Danny", "lastName" : "Green" },
-	{ "id" : 7, "firstName" : "Anthony", "lastName" : "Cove" }
+	{ 
+		"id" : 0, 
+		"firstName" : "Alice", 
+		"lastName" : "Arten",
+		"age" : 10,
+		"birthDate" : "2001-01-01",
+		"location" : "Philippines"
+	},
+	{ 
+		"id" : 1, 
+		"firstName" : "Bob", 
+		"lastName" : "Brigham",
+		"age" : 11,
+		"birthDate" : "2001-01-01",
+		"location" : "Philippines"		
+	},
+	{ 
+		"id" : 2, 
+		"firstName" : "Charilie", 
+		"lastName" : "Campbell",
+		"age" : 12,
+		"birthDate" : "2001-01-01",
+		"location" : "Philippines"		
+	},
+	{ 
+		"id" : 3, 
+		"firstName" : "Bob", 
+		"lastName" : "Marley",
+		"age" : 13,
+		"birthDate" : "2001-01-01",
+		"location" : "Philippines"				
+	},
+	{ 
+		"id" : 4, 
+		"firstName" : "Tom", 
+		"lastName" : "DeLonge",
+		"age" : 14,
+		"birthDate" : "2001-01-01",
+		"location" : "Philippines"				
+	},
+	{ 
+		"id" : 5, 
+		"firstName" : "Justin", 
+		"lastName" : "Timberlake",
+		"age" : 15,
+		"birthDate" : "2001-01-01",
+		"location" : "Philippines"				
+	},
+	{ 
+		"id" : 6, 
+		"firstName" : "Danny", 
+		"lastName" : "Green",
+		"age" : 16,
+		"birthDate" : "2001-01-01",
+		"location" : "Philippines"				
+	},
+	{ 
+		"id" : 7, 
+		"firstName" : "Anthony", 
+		"lastName" : "Cove",
+		"age" : 17,
+		"birthDate" : "2001-01-01",
+		"location" : "Philipines"		
+	}
 ]

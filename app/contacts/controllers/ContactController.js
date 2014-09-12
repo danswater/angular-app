@@ -1,14 +1,16 @@
 'use strict';
 
-angular.module( 'app.contact.controllers', [
-] )
-.controller( 'ContactController', function ( $scope, $modal, Contact ) {
+var Contact = angular.module( 'app.contact.controllers', [] );
+
+var listController = function ( $scope, $modal, Contact ) {
+	
 	$scope.contacts = Contact.getContacts();
 
 	function addHandler( $scope, $modalInstance, Contact ) {
 		$scope.save = function ( contact ) {
-			contact.id = Contact.getContacts().length;
-			Contact.setContact( contact );
+			contact.id = new Date().getTime();
+
+			Contact.addContact( contact );
 			$modalInstance.close();
 		};
 
@@ -29,8 +31,7 @@ angular.module( 'app.contact.controllers', [
 		$scope.contact = contact;
 
 		$scope.save = function ( contact ) {
-			contact.id = Contact.getContacts().length;
-			Contact.setContact( contact );
+			Contact.updateContact( contact );
 			$modalInstance.close();
 		};
 
@@ -58,10 +59,17 @@ angular.module( 'app.contact.controllers', [
 		Contact.deleteContact( contact );
 	};
 
-} )
-.controller( 'ContactDetailsController', function ( $scope, $routeParams, Contact ) {
+};
+
+Contact.controller( 'ContactListController', listController );
+
+var detailsController = function ( $scope, $routeParams, Contact ) {
 	var params = {
 		'id' : parseInt( $routeParams.id, 10 )
 	};
+
 	$scope.contact = Contact.getContact( params );
-} );
+
+};
+
+Contact.controller( 'ContactDetailsController', detailsController );
